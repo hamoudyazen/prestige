@@ -392,6 +392,7 @@
           "image_YRUTpL": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
               "text_position": "middle_center",
               "subheading": "Tell your story",
               "title": "Slide 2",
