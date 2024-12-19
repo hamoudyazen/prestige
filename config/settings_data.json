@@ -97,7 +97,8 @@
           "home_page_only": false,
           "background": "#ffffff",
           "text_color": "#080808",
-          "content": "Buy 2 or more and get an additional 10% off + free shipping!",
+          "content1": "first text",
+          "content2": "second text",
           "link": ""
         }
       },
