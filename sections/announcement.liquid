@@ -8,8 +8,12 @@
               <a href="{{ section.settings.link }}">{{ section.settings.content | escape }}</a>
             {%- else -%}
               {{ section.settings.content1 | escape }}
-              -
-              {{ section.settings.content2 | escape }}
+              {%-  if section.settings.content2.size > 0 -%}
+                -  
+                 {{ section.settings.content2 | escape }}
+
+              {%- endif -%} }}
+              
             {%- endif -%}
           </p>
         </div>
