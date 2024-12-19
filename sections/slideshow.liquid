@@ -99,11 +99,7 @@
       {%- endfor -%}
     </div>
 
-    {%- if section.settings.show_arrow -%}
-      <button data-href="#section-{{ section.id }}-end" class="Slideshow__ScrollButton RoundButton RoundButton--medium" data-animate-bottom>
-        {%- include 'icon' with 'arrow-bottom' -%}
-      </button>
-    {%- endif -%}
+
   </div>
 
   <span id="section-{{ section.id }}-end" class="Anchor"></span>
@@ -143,12 +139,6 @@
       "label": "Show full-screen images",
       "info": "If enabled, images will be resized to fit the entire screen.",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_arrow",
-      "label": "Show bottom arrow",
-      "default": false
     },
     {
       "type": "checkbox",
