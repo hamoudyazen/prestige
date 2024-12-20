@@ -1,41 +1,4 @@
-<div class="example">
 
-    {% if image %}
-
-        <a href="#">
-          <img src="{{ image | image_url: width: 600, height: 600 }}" 
-               alt="Banner Image {{ i }}" 
-               class="background-image"/>
-      </a>
-    {% endif %}
-
-    <div class="overlay">
-      Multi-line <br/>text
-    </div>
-  </div>
-
-
-
-
-
-
-
-  {% stylesheet %}
-    .example img {
-  width: 100%;
-   position: relative;
-}
-
-.example .overlay {
-  position: absolute;
-  top: 80px;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-}
-  {% endstylesheet %}
- 
       {% schema %}
       {
           "name": "Custom Section 2",
