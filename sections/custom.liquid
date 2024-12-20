@@ -40,11 +40,9 @@
         {%- assign section_image_3 = section.settings.image3 | default: section.settings.image -%}
 
 
+        {%- capture mobile_size -%}750x{% if section.settings.image1.height >= 960 %}960{% else %}{{ section.settings.image1.height }}{% endif %}{%- endcapture -%}
+        {% if section.settings.image1 %}data-bgset="{{ section.settings.image1 | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image1 | img_url: '1000x' }} 1000w, {{ section.settings.image1 | img_url: '1500x' }} 1500w"{% endif %}
 
-          <li>
-            <img src="{{ section.settings.image1.src }}" width="20px" style="vertical-align: middle; margin-right:10px;">
-          <a href="IG LINK" style="color:white">Instagram</a>
-        </li>
 
 
 
