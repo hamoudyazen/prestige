@@ -372,7 +372,9 @@
       "custom_ANxaNt": {
         "type": "custom",
         "settings": {
-          "image1": "shopify://shop_images/banner-image-2.jpg"
+          "image1": "shopify://shop_images/banner-image-2.jpg",
+          "image2": "shopify://shop_images/banner-image-6.jpg",
+          "image3": "shopify://shop_images/banner-image-1.jpg"
         }
       }
     },
