@@ -1,4 +1,4 @@
-
+alert("he");
 gsap.set("li > span", {transformOrigin:"0 50%"})
 gsap.set("li:not(:first-of-type) span", {opacity:0.2, scale:0.8})
 
@@ -20,6 +20,7 @@ ScrollTrigger.create({
 	animation:tl,
 	scrub:true
 }) 
+
 
 /* learn to master all aspects of GSAP
 
