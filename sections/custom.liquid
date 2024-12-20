@@ -1,43 +1,38 @@
 <section id="billboard" class="bg-light py-5">
-  <div class="container">
-      <div class="row justify-content-center">
-          <h1 class="section-title text-center mt-4">New Collections</h1>
-          <div class="col-md-6 text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-      </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="section-title text-center mt-4">New Collections</h1>
+            <div class="col-md-6 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
 
-      <div class="row">
-          <div class="swiper main-swiper py-4">
-              <div class="swiper-wrapper d-flex border-animation-left">
-                  {% for i in (1..3) %}
-                  <div class="swiper-slide">
-                      <div class="banner-item image-zoom-effect">
-                          <div class="image-holder">
-                            yazan
-                              {% assign image = section.settings['image' | append: i] %}
-                              {% if image %}
-                              <a href="#">
-                                yazan
-
-                                <img alt="cat" src="cat.jpg" width="100" height="200">
-                                  <img
-                                    alt="{{ image.alt }}"
-                                    src="{{ image.src }}"
-                                    width="{{ image.width }}"
-                                    height="{{ image.height }}"
-                                  >
-                              </a>
-                              {% endif %}
-                          </div>
-                      </div>
-                  </div>
-                  {% endfor %}
-              </div>
-          </div>
-      </div>
-  </div>
+        <div class="row">
+            <div class="swiper main-swiper py-4">
+                <div class="swiper-wrapper d-flex border-animation-left">
+                    {% for i in (1..3) %}
+                    <div class="swiper-slide">
+                        <div class="banner-item image-zoom-effect">
+                            <div class="image-holder">
+                                {% assign image_key = 'image' | append: i %}
+                                {% assign image = section.settings[image_key] %}
+                                {% if image %}
+                                <a href="#">
+                                    <img src="{{ image | image_url: width: 600, height: 600 }}" 
+                                         alt="Banner Image {{ i }}" 
+                                         class="img-fluid"/>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 
   
   {% schema %}
