@@ -22,8 +22,8 @@
     <section id="billboard" class="bg-light py-5">
       <div class="container">
         <div class="row justify-content-center">
-          <h1 class="section-title text-center mt-4" data-aos="fade-up">New Collections</h1>
-          <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <h1 class="section-title" data-aos="fade-up">New Collections</h1>
+          <div class="section-description" data-aos="fade-up" data-aos-delay="300">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci
               repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum,
               quibusdam ex repellat eaque!</p>
@@ -70,10 +70,30 @@
   </html>
 
   {%  stylesheet %}
+  .section-title{
 
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .section-description
+  {
+    text-align: center;
+    font-weight: 500;
+    padding-bottom:10px;
+    font-size: 35px;
+    text-transform: normal;
+  }
+  #billboard{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
 .swiper {
       display: flex;
-      gap: 1px; /* Space between items */
+      gap: 1rem; /* Space between items */
       overflow: hidden;
       position: relative;
     }
@@ -87,6 +107,10 @@
 
     .banner-item {
       text-align: center;
+      display: flex
+;
+    flex-direction: column;
+    gap: 1rem;
     }
 
     .image-holder img {
