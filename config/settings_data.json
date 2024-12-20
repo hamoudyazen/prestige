@@ -369,68 +369,22 @@
           "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
         }
       },
-      "slideshow2_PHgErn": {
-        "type": "slideshow2",
-        "blocks": {
-          "image_MJz7mP": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
-              "text_position": "middle_center",
-              "subheading": "Tell your story",
-              "title": "Slide 1",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": "",
-              "text_color": "#ffffff",
-              "button_background": "#ffffff",
-              "button_text_color": "#000000",
-              "overlay_color": "#000000",
-              "overlay_opacity": 30
-            }
-          },
-          "image_YRUTpL": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg",
-              "text_position": "middle_center",
-              "subheading": "Tell your story",
-              "title": "Slide 2",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": "",
-              "text_color": "#ffffff",
-              "button_background": "#ffffff",
-              "button_text_color": "#000000",
-              "overlay_color": "#000000",
-              "overlay_opacity": 30
-            }
-          }
-        },
-        "block_order": [
-          "image_MJz7mP",
-          "image_YRUTpL"
-        ],
+      "custom_D7difM": {
+        "type": "custom",
         "settings": {
-          "section_height": "auto",
-          "transition_type": "sweep",
-          "autoplay": true,
-          "cycle_speed": 5,
-          "background": "rgba(0,0,0,0)"
+          "placeholder_text": "Search for products..."
         }
       }
     },
     "content_for_index": [
-      "slideshow2_PHgErn",
       "slideshow",
       "1595363175996",
       "1595364523818",
       "1595363281802",
       "1602617742633",
       "1602617331938",
-      "1596220234038"
+      "1596220234038",
+      "custom_D7difM"
     ]
   },
   "presets": {
