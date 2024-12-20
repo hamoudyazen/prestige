@@ -35,6 +35,10 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
+        {%- assign section_image_1 = section.settings.image1 | default: section.settings.image -%}
+        {%- assign section_image_2 = section.settings.image2 | default: section.settings.image -%}
+        {%- assign section_image_3 = section.settings.image3 | default: section.settings.image -%}
+
         <div class="row">
           <div class="swiper main-swiper py-4">
             <div class="swiper-wrapper d-flex border-animation-left">
@@ -44,8 +48,8 @@
                     <a href="#">
                       <img class="img-fluid"
                         src="{{ section.settings.image1 }}"
-                        data-src="{{ mobile_image | image_url: height: 800 }}"
-                        alt="{{ mobile_image.alt | escape }}">                    </a>
+                        data-src="{{ section_image_1 | image_url: height: 800 }}"
+                        alt="{{ section_image_1.alt | escape }}">                    </a>
                   </div>
                 </div>
               </div>
@@ -55,8 +59,8 @@
                     <a href="#">
                       <img class="img-fluid"
                         src="{{ section.settings.image2 }}"
-                        data-src="{{ mobile_image | image_url: height: 800 }}"
-                        alt="{{ mobile_image.alt | escape }}">
+                        data-src="{{ section_image_2 | image_url: height: 800 }}"
+                        alt="{{ section_image_2.alt | escape }}">
                     </a>
                   </div>
                 </div>
@@ -67,8 +71,8 @@
                     <a href="#">
                       <img class="img-fluid"
                         src="{{ section.settings.image3 }}"
-                        data-src="{{ mobile_image | image_url: height: 800 }}"
-                        alt="{{ mobile_image.alt | escape }}">                    </a>
+                        data-src="{{ section_image_3 | image_url: height: 800 }}"
+                        alt="{{ section_image_3.alt | escape }}">                    </a>
                   </div>
                 </div>
               </div>
