@@ -1,4 +1,4 @@
-<div class="custom-wrapper scroll-x">
+<div class="wrapper scroll-x">
     <ul class="items">
       <li>1</li>
       <li>2</li>
@@ -25,37 +25,38 @@
       <li>23</li>
       <li>24</li>
     </ul>
-</div>
+  </div>
+  
 
 {% stylesheet %}
-.custom-wrapper {
+:root {
   --color-fg: #2563eb;
   --color-bg: #bfdbfe;
 }
 
-.custom-wrapper * {
+* {
   box-sizing: border-box;
 }
 
-.custom-wrapper html,
-.custom-wrapper body {
+html,
+body {
   height: 100%;
 }
 
-.custom-wrapper body {
+body {
   display: grid;
   place-items: center;
   font-family: system-ui, sans-serif;
 }
 
-.custom-wrapper .scroll-x {
+.scroll-x {
   max-width: 100%;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scrollbar-color: var(--color-fg) var(--color-bg);
 }
 
-.custom-wrapper .wrapper {
+.wrapper {
   --size: clamp(12rem, 1rem + 50vw, 20rem);
   --gutter: 2rem;
   --gap: 0.5rem;
@@ -70,13 +71,13 @@
     1fr [full-end];
 }
 
-.custom-wrapper .items {
+.wrapper .items {
   grid-area: content;
   display: flex;
   gap: var(--gap);
 }
 
-.custom-wrapper .items::after {
+.wrapper .items::after {
   content: "";
   padding-inline-end: max(
     var(--gutter),
@@ -84,7 +85,7 @@
   );
 }
 
-.custom-wrapper .items > * {
+.wrapper .items > * {
   display: grid;
   place-content: center;
   flex-shrink: 0;
@@ -99,7 +100,7 @@
 }
 
 @supports (animation-timeline: view()) {
-  .custom-wrapper .items > * {
+  .wrapper .items > * {
     --scale: 0.9;
     --offset: var(--gap);
     animation: scale linear both, fade linear both;
