@@ -43,6 +43,7 @@
                                       <a href="#">
                                           {% assign image = section.settings['image' | append: i] %}
                                           {% if image %}
+                                            <p>a</p>
                                             <img src="{{ image | image_url: width: 600, height: 600 }}"
                                                alt="hello" />
                                           {% endif %}
