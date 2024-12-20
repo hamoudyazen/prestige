@@ -40,6 +40,20 @@
         {%- assign section_image_3 = section.settings.image3 | default: section.settings.image -%}
 
 
+
+          <div class="Slideshow__ImageContainer">
+              <img class="Slideshow__Image Image--lazyLoad"
+                   src="{{ section.settings.image1 | img_url: '1x1' }}"
+                   data-src="{{ section.settings.image1  | img_url: 'x800' }}"
+                   alt="{{ section.settings.image1  | escape }}">
+
+              <noscript>
+                <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
+              </noscript>
+          </div>
+
+
+
         <div class="row">
           <div class="swiper main-swiper py-4">
             <div class="swiper-wrapper d-flex border-animation-left">
