@@ -43,9 +43,10 @@
                                       <a href="#">
                                           {% assign image = section.settings['image' | append: i] %}
                                           {% if image %}
-                                          <img class="img-fluid"
-                                               src="{{ image | file_url }}"
-                                               alt="Collection {{ i }}">
+
+                                            <img src="{{ image | img_url: '600x600' }}"
+                                               alt="hello" />
+
                                           {% else %}
                                           <img class="img-fluid"
                                                src="{{ 'placeholder-image.png' | file_url }}"
