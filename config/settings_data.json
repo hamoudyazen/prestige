@@ -369,18 +369,16 @@
           "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
         }
       },
-      "custom_PBANPm": {
+      "custom_ANxaNt": {
         "type": "custom",
         "settings": {
-          "image1": "shopify://shop_images/banner-image-2.jpg",
-          "image2": "shopify://shop_images/banner-image-6.jpg",
-          "image3": "shopify://shop_images/banner-image-1.jpg"
+          "image1": "shopify://shop_images/banner-image-2.jpg"
         }
       }
     },
     "content_for_index": [
       "slideshow",
-      "custom_PBANPm",
+      "custom_ANxaNt",
       "1595364523818",
       "1595363175996",
       "1595363281802",
