@@ -39,9 +39,11 @@
                     {% assign image_key = 'image' | append: i %}
                     {% assign text_key = 'text' | append: i %}
                     {% assign description_key = 'description' | append: i %}
+                    {% assign discover_key = 'discover' | append: i %}
                     {% assign image = section.settings[image_key] %}
                     {% assign text = section.settings[text_key] %}
                     {% assign description = section.settings[description_key] %}
+                    {% assign discover = section.settings[discover_key] %}
                     {% if image %}
                     <a href="#">
                       <img src="{{ image | image_url: width: 600, height: 600 }}" alt="Banner Image {{ i }}" class="img-fluid" />
@@ -54,7 +56,7 @@
                     </h5>
                     <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
                     <div class="btn-left">
-                      <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
+                      <a href="{{ discover}}" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Discover Now</a>
                     </div>
                   </div>
                 </div>
@@ -209,6 +211,24 @@
                 "id": "description3",
                 "label": "description3",
                 "default": "Description 3"
+              },
+              {
+                "type": "text",
+                "id": "discover1",
+                "label": "discover1",
+                "default": "Discover 1"
+              },
+              {
+                "type": "text",
+                "id": "discover2",
+                "label": "discover2",
+                "default": "Discover 2"
+              },
+              {
+                "type": "text",
+                "id": "discover3",
+                "label": "discover3",
+                "default": "Discover 3"
               },
               {
                   "id": "image2",
