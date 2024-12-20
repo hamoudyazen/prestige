@@ -371,7 +371,9 @@
       },
       "custom2_DiFnBW": {
         "type": "custom2",
-        "settings": {}
+        "settings": {
+          "image": "shopify://shop_images/woman-infront-of-tree-with-berries.jpeg"
+        }
       }
     },
     "content_for_index": [
