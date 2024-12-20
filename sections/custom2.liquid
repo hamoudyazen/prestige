@@ -1,11 +1,24 @@
 <div class="example">
-    <img src="{{ image | image_url: width: 600, height: 600 }}" 
-        alt="Banner Image {{ i }}" 
-        class="background-image"/>
+
+    {% if image %}
+
+        <a href="#">
+          <img src="{{ image | image_url: width: 600, height: 600 }}" 
+               alt="Banner Image {{ i }}" 
+               class="background-image"/>
+      </a>
+    {% endif %}
+
     <div class="overlay">
       Multi-line <br/>text
     </div>
   </div>
+
+
+
+
+
+
 
   {% stylesheet %}
     .example img {
