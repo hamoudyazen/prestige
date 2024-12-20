@@ -28,6 +28,25 @@
 </div>
 
 {% stylesheet %}
+.custom-wrapper {
+  --color-fg: #2563eb;
+  --color-bg: #bfdbfe;
+}
+
+.custom-wrapper * {
+  box-sizing: border-box;
+}
+
+.custom-wrapper html,
+.custom-wrapper body {
+  height: 100%;
+}
+
+.custom-wrapper body {
+  display: grid;
+  place-items: center;
+  font-family: system-ui, sans-serif;
+}
 
 .custom-wrapper .scroll-x {
   max-width: 100%;
@@ -116,6 +135,7 @@
     }
   }
 }
+
 
 {% endstylesheet %}
  
