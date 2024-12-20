@@ -46,7 +46,7 @@
                   </div>
                   <div class="banner-content py-4">
                     <h5 class="element-title text-uppercase">
-                      <a href="index.html" class="item-anchor">Soft leather jackets</a>
+                      <a href="index.html" class="aa">Soft leather jackets</a>
                     </h5>
                     <p>Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.</p>
                     <div class="btn-left">
@@ -70,6 +70,36 @@
   </html>
 
   {%  stylesheet %}
+
+
+.aa {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.aa:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.aa:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
   .section-title{
 
     text-align: center;
@@ -82,7 +112,7 @@
     text-align: center;
     font-weight: 500;
     padding-bottom:10px;
-    font-size: 35px;
+    font-size: 13px;
     text-transform: normal;
   }
   #billboard{
