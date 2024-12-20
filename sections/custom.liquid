@@ -88,67 +88,70 @@
 
   {%  stylesheet %}
 
-
-  /* General Styling */
-  .swiper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    gap: 20px; /* Spacing between items */
-    overflow: hidden;
-    position: relative;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-
-  /* Mobile View - Slider */
-  @media (max-width: 768px) {
-    .swiper {
-      display: flex;
-      overflow-x: auto; /* Enable horizontal scrolling */
-      scroll-snap-type: x mandatory; /* Snap to slides */
-      gap: 10px; /* Smaller spacing for mobile */
+.swiper {
+      display: grid;
+      grid-template-columns: repeat(3, 20%); /* 20% width for each item on PC */
+      gap: 20px; /* Space between items */
+      overflow: hidden;
+      position: relative;
     }
 
     .swiper-slide {
-      flex: 0 0 40%; /* Take 40% of the width for partial visibility */
-      scroll-snap-align: center; /* Center align slides */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
     }
 
-    .swiper-slide:nth-child(2) {
-      flex: 0 0 45%; /* Slightly larger middle slide for prominence */
+    .banner-item {
+      text-align: center;
     }
-  }
 
-  /* Hide the arrows on mobile if needed */
-  @media (max-width: 768px) {
-    .icon-arrow {
-      display: none;
+    .image-holder img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-  }
 
-  /* Optional Styling for Scrollbar */
-  .swiper {
-    scrollbar-width: thin; /* For Firefox */
-  }
+    /* Mobile View - Slider */
+    @media (max-width: 768px) {
+      .swiper {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Snap to slides */
+        gap: 10px; /* Smaller spacing for mobile */
+      }
 
-  .swiper::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar */
-  }
+      .swiper-slide {
+        flex: 0 0 40%; /* 40% width for mobile items */
+        scroll-snap-align: center; /* Center align slides */
+      }
+    }
 
-  .swiper::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar thumb color */
-    border-radius: 4px;
-  }
+    /* Optional Scrollbar Styling */
+    .swiper {
+      scrollbar-width: thin; /* Firefox */
+    }
 
-  .swiper::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Scrollbar thumb hover color */
-  }
+    .swiper::-webkit-scrollbar {
+      height: 8px;
+    }
 
+    .swiper::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    .swiper::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Hide navigation arrows on mobile */
+    @media (max-width: 768px) {
+      .icon-arrow {
+        display: none;
+      }
+    }
 
   {% endstylesheet %}
       
