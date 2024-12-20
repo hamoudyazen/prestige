@@ -1,17 +1,29 @@
-/**
- * Include your custom JavaScript here.
- *
- * We also offer some hooks so you can plug your own logic. For instance, if you want to be notified when the variant
- * changes on product page, you can attach a listener to the document:
- *
- * document.addEventListener('variant:changed', function(event) {
- *   var variant = event.detail.variant; // Gives you access to the whole variant details
- * });
- *
- * You can also add a listener whenever a product is added to the cart:
- *
- * document.addEventListener('product:added', function(event) {
- *   var variant = event.detail.variant; // Get the variant that was added
- *   var quantity = event.detail.quantity; // Get the quantity that was added
- * });
- */
+
+gsap.set("li > span", {transformOrigin:"0 50%"})
+gsap.set("li:not(:first-of-type) span", {opacity:0.2, scale:0.8})
+
+const tl = gsap.timeline()
+	.to("li:not(:first-of-type) span", 
+		 {opacity:1, scale:1, stagger:0.5}
+		)
+   .to("li:not(:last-of-type) span", 
+		 {opacity:0.2, scale:0.8, stagger:0.5}, 0)
+
+
+ScrollTrigger.create({
+	trigger:"h1", 
+	start:"center center",
+	endTrigger:"li:last-of-type",
+	end:"center center",
+	pin:true,
+	markers:true,
+	animation:tl,
+	scrub:true
+}) 
+
+/* learn to master all aspects of GSAP
+
+unlock over 250 premium video tutorials to take you from beginner to pro
+
+https://www.creativecodingclub.com/bundles/creative-coding-club
+*/
