@@ -41,16 +41,10 @@
 
 
 
-          <div class="Slideshow__ImageContainer">
-              <img class="Slideshow__Image Image--lazyLoad"
-                   src="{{ section.settings.image1 | img_url: '1x1' }}"
-                   data-src="{{ section.settings.image1  | img_url: 'x800' }}"
-                   alt="{{ section.settings.image1  | escape }}">
-
-              <noscript>
-                <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
-              </noscript>
-          </div>
+          <li>
+            <img src="{{ section.settings.image1 }}" width="20px" style="vertical-align: middle; margin-right:10px;">
+          <a href="IG LINK" style="color:white">Instagram</a>
+        </li>
 
 
 
