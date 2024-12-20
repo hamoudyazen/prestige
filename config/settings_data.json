@@ -316,7 +316,7 @@
         ],
         "settings": {
           "title": "Featured collection",
-          "layout_mode": "grid",
+          "layout_mode": "carousel",
           "show_product_info": true,
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
