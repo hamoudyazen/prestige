@@ -106,6 +106,7 @@
         "type": "header",
         "settings": {
           "use_sticky_header": true,
+          "logo": "shopify://shop_images/INSPIRED._170x_dd2b4c7d-e615-4ffe-92b8-597c2d2a7058.png",
           "logo_max_width": 180,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
@@ -146,6 +147,7 @@
           "slide-1": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/fleur-kaan-pq2rbxu0Kpk-unsplash.jpg",
               "apply_overlay": false,
               "content_position": "middleLeft",
               "subheading": "",
@@ -256,7 +258,7 @@
           "subheading": "",
           "title": "Breathing Fresh & Clean Air",
           "image_position": "right",
-          "content": "<p><em>Dry and very humid air can affect health and the condition of home. When air is too humid, it can encourage&nbsp;mold and mildew&nbsp;growth and contribute to health issues.</em></p>",
+          "content": "<p><em>Dry and very humid air can affect health and the condition of home. When air is too humid, it can encourage mold and mildew growth and contribute to health issues.</em></p>",
           "link_text": "SHOP Clear Aromifier",
           "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
         }
@@ -268,76 +270,8 @@
           "text_color": "#ffffff",
           "subheading": "",
           "title": "",
-          "video_url": "https://vimeo.com/440134493"
-        }
-      },
-      "1595364523818": {
-        "type": "shop-the-look",
-        "blocks": {
-          "1595364550563": {
-            "type": "look",
-            "settings": {
-              "dot_style": "light",
-              "product_1": "cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-1",
-              "product_1_horizontal_position": 15,
-              "product_1_vertical_position": 35,
-              "product_2": "cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser",
-              "product_2_horizontal_position": 81,
-              "product_2_vertical_position": 50,
-              "product_3": "",
-              "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85
-            }
-          }
-        },
-        "block_order": [
-          "1595364550563"
-        ],
-        "settings": {
-          "subheading": "",
-          "title": "Our Humidifiers:",
-          "show_mobile_product_info": true
-        }
-      },
-      "1596220234038": {
-        "type": "testimonials",
-        "blocks": {
-          "1596220234038-0": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>This product has gotten me through allergy season and sets the mood with it's colors. Got 4 of them for the whole family!</p>"
-            }
-          },
-          "1596220234038-1": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>BEST diffuser/humidifer/LED Projector HANDS DOWN. Mood changing lights really help with my sleep too!!</p>"
-            }
-          },
-          "1596220234038-2": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>Had the flu for a few days, bought this and let it run, two days later I could breathe again and had no symptoms... this diffuser is a miracle. I used the peppermint oil to add to it and it made a huge difference.</p>"
-            }
-          },
-          "1596222341500": {
-            "type": "testimonial",
-            "settings": {
-              "quote": "<p>LOVE that Aromifier is BPA Free and friendly towards the environment</p>"
-            }
-          }
-        },
-        "block_order": [
-          "1596220234038-0",
-          "1596220234038-1",
-          "1596220234038-2",
-          "1596222341500"
-        ],
-        "settings": {
-          "autoplay": true,
-          "cycle_speed": 5,
-          "background": "#d5e0ee",
-          "text_color": "#ffffff"
+          "image": "shopify://shop_images/Hero_Banner_3x_799c7c46-667e-426a-bbe3-860dc8fe4db9.jpg",
+          "video_url": ""
         }
       },
       "cart-template": {
@@ -347,32 +281,10 @@
           "shipping_estimator_default_country": "United States"
         }
       },
-      "1602617331938": {
-        "type": "text-with-image",
-        "settings": {
-          "subheading": "Aromifier",
-          "title": "Aromifier Pro V2 2020",
-          "image_position": "right",
-          "content": "<p>Our design team made sure to integrate much requested essential oil tray and took our original 360 hinge design to the next level. Now the Aromifier Pro V2 2020 rotates both vertically and horizontally. There's also an automatic setting so that you get to experience the beginning of what next-gen humidifying experience really feels like.&nbsp;</p>",
-          "link_text": "Click Here To Learn More",
-          "link_url": "shopify://products/aromifier-pro-2020-v2"
-        }
-      },
-      "1602617742633": {
-        "type": "text-with-image",
-        "settings": {
-          "subheading": "Aromifier",
-          "title": "Clear Aromifier",
-          "image_position": "left",
-          "content": "<p>Breathe easier and add style to your home with our very first original Clear Aromifier. Lightweight, portable, and ready to relieve your nose of any congestion!&nbsp;</p>",
-          "link_text": "Click Here To Learn More",
-          "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
-        }
-      },
       "custom_gKGbqw": {
         "type": "custom",
         "settings": {
-          "image1": "shopify://shop_images/banner-image-2.jpg",
+          "image1": "shopify://shop_images/Collection_3x_550x_b95ac736-6079-4a50-8799-f1e88b64fffb.jpg",
           "text1": "Soft Touch",
           "text2": "Soft Touch",
           "text3": "Soft Touch",
@@ -382,20 +294,42 @@
           "discover1": "Discover 1",
           "discover2": "Discover 2",
           "discover3": "Discover 3",
-          "image2": "shopify://shop_images/banner-image-6.jpg",
-          "image3": "shopify://shop_images/banner-image-1.jpg"
+          "image2": "shopify://shop_images/Collection_3x_550x_c2d752bd-a763-4acc-8598-ea050492058e.jpg",
+          "image3": "shopify://shop_images/Collection_3x_550x_7956432f-da33-45f7-ade7-9e11515f5c2b.jpg"
+        }
+      },
+      "featured_collections_HX7X9q": {
+        "type": "featured-collections",
+        "blocks": {
+          "collection_BHpjFC": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "collection_BHpjFC"
+        ],
+        "settings": {
+          "title": "Featured collection",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
         }
       }
     },
     "content_for_index": [
       "slideshow",
       "custom_gKGbqw",
-      "1595364523818",
+      "featured_collections_HX7X9q",
       "1595363175996",
-      "1595363281802",
-      "1602617742633",
-      "1602617331938",
-      "1596220234038"
+      "1595363281802"
     ]
   },
   "presets": {
