@@ -88,32 +88,67 @@
 
   {%  stylesheet %}
 
-.swiper-slide {
+
+  /* General Styling */
+  .swiper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 20px; /* Spacing between items */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    transition: transform 0.3s ease;
   }
 
-  .banner-item {
-    text-align: center;
+  /* Mobile View - Slider */
+  @media (max-width: 768px) {
+    .swiper {
+      display: flex;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      scroll-snap-type: x mandatory; /* Snap to slides */
+      gap: 10px; /* Smaller spacing for mobile */
+    }
+
+    .swiper-slide {
+      flex: 0 0 40%; /* Take 40% of the width for partial visibility */
+      scroll-snap-align: center; /* Center align slides */
+    }
+
+    .swiper-slide:nth-child(2) {
+      flex: 0 0 45%; /* Slightly larger middle slide for prominence */
+    }
   }
 
-  .icon-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 10;
+  /* Hide the arrows on mobile if needed */
+  @media (max-width: 768px) {
+    .icon-arrow {
+      display: none;
+    }
   }
 
-  .icon-arrow-left {
-    left: 10px;
+  /* Optional Styling for Scrollbar */
+  .swiper {
+    scrollbar-width: thin; /* For Firefox */
   }
 
-  .icon-arrow-right {
-    right: 10px;
+  .swiper::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
   }
+
+  .swiper::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 4px;
+  }
+
+  .swiper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar thumb hover color */
+  }
+
 
   {% endstylesheet %}
       
