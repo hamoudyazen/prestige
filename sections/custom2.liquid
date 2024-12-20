@@ -1,23 +1,36 @@
+<div class="example">
+    <img src="{{ image | image_url: width: 600, height: 600 }}" 
+        alt="Banner Image {{ i }}" 
+        class="background-image"/>
+    <div class="overlay">
+      Multi-line <br/>text
+    </div>
+  </div>
 
+  {% stylesheet %}
+    .example img {
+  width: 100%;
+   position: relative;
+}
+
+.example .overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}
+  {% endstylesheet %}
  
       {% schema %}
       {
           "name": "Custom Section 2",
           "settings": [
               {
-                  "id": "image1",
+                  "id": "image",
                   "type": "image_picker",
                   "label": "Upload Image 1"
-              },
-              {
-                  "id": "image2",
-                  "type": "image_picker",
-                  "label": "Upload Image 2"
-              },
-              {
-                  "id": "image3",
-                  "type": "image_picker",
-                  "label": "Upload Image 3"
               }
           ],
           "presets": [
