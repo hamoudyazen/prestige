@@ -42,7 +42,21 @@
                 <div class="banner-item image-zoom-effect">
                   <div class="image-holder">
                     <a href="#">
-                      <img src="{{ section.settings.image1 | default: 'https://via.placeholder.com/500' }}" alt="Product 1" class="img-fluid">
+                      <img class="img-fluid"
+                        src="{{ section.settings.image1 }}"
+                        data-src="{{ mobile_image | image_url: height: 800 }}"
+                        alt="{{ mobile_image.alt | escape }}">                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-item image-zoom-effect">
+                  <div class="image-holder">
+                    <a href="#">
+                      <img class="img-fluid"
+                        src="{{ section.settings.image2 }}"
+                        data-src="{{ mobile_image | image_url: height: 800 }}"
+                        alt="{{ mobile_image.alt | escape }}">
                     </a>
                   </div>
                 </div>
@@ -51,17 +65,10 @@
                 <div class="banner-item image-zoom-effect">
                   <div class="image-holder">
                     <a href="#">
-                      <img src="{{ section.settings.image2 | default: 'https://via.placeholder.com/500' }}" alt="Product 2" class="img-fluid">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="banner-item image-zoom-effect">
-                  <div class="image-holder">
-                    <a href="#">
-                      <img src="{{ section.settings.image3 | default: 'https://via.placeholder.com/500' }}" alt="Product 3" class="img-fluid">
-                    </a>
+                      <img class="img-fluid"
+                        src="{{ section.settings.image3 }}"
+                        data-src="{{ mobile_image | image_url: height: 800 }}"
+                        alt="{{ mobile_image.alt | escape }}">                    </a>
                   </div>
                 </div>
               </div>
