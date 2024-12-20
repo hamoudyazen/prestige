@@ -42,43 +42,23 @@
         <div class="row">
           <div class="swiper main-swiper py-4">
             <div class="swiper-wrapper d-flex border-animation-left">
+              {% for image in section.settings | slice: 0, 3 %}
               <div class="swiper-slide">
                 <div class="banner-item image-zoom-effect">
                   <div class="image-holder">
                     <a href="#">
                       <img class="img-fluid"
-                        src="{{ section.settings.image1 }}"
-                        data-src="{{ section_image_1 | image_url: height: 800 }}"
-                        alt="{{ section_image_1.alt | escape }}">                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="banner-item image-zoom-effect">
-                  <div class="image-holder">
-                    <a href="#">
-                      <img class="img-fluid"
-                        src="{{ section.settings.image2 }}"
-                        data-src="{{ section_image_2 | image_url: height: 800 }}"
-                        alt="{{ section_image_2.alt | escape }}">
+                        src="{{ image | image_url: height: 800 }}"
+                        alt="{{ image.alt | escape }}">
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="banner-item image-zoom-effect">
-                  <div class="image-holder">
-                    <a href="#">
-                      <img class="img-fluid"
-                        src="{{ section.settings.image3 }}"
-                        data-src="{{ section_image_3 | image_url: height: 800 }}"
-                        alt="{{ section_image_3.alt | escape }}">                    </a>
-                  </div>
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
+        
       </div>
     </section>
     
