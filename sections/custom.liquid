@@ -17,9 +17,15 @@
                               {% assign image = section.settings['image' | append: i] %}
                               {% if image %}
                               <a href="#">
-                                  <img src="{{ image | image_url: width: 600, height: 600 }}" 
-                                       alt="Banner Image {{ i }}" 
-                                       class="img-fluid"/>
+                                
+
+                                <img alt="cat" src="cat.jpg" width="100" height="200">
+                                  <img
+                                    alt="{{ image.alt }}"
+                                    src="{{ image.src }}"
+                                    width="{{ image.width }}"
+                                    height="{{ image.height }}"
+                                  >
                               </a>
                               {% endif %}
                           </div>
