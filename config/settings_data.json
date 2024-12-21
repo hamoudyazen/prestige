@@ -227,13 +227,13 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "show_share_buttons": false,
-          "show_vendor": false,
+          "show_share_buttons": true,
+          "show_vendor": true,
           "description_below_add_to_cart": true,
           "show_color_swatch": true,
-          "show_color_carousel": false,
+          "show_color_carousel": true,
           "show_quantity_selector": true,
-          "show_inventory_quantity": false,
+          "show_inventory_quantity": true,
           "inventory_quantity_threshold": 3,
           "show_payment_button": true,
           "image_size": "large",
@@ -251,7 +251,7 @@
           "show_section": true,
           "title": "Related Products",
           "show_product_info": true,
-          "show_color_swatch": false
+          "show_color_swatch": true
         }
       },
       "popup": {
