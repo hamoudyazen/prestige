@@ -1,17 +1,21 @@
 {% stylesheet %}
-  .ProductMeta__Description .checkmark {
-  color: #000; /* Change this to your desired checkmark color */
+.ProductMeta__Description .checkmark {
+  display: inline-flex;
+  align-items: center;
   margin-right: 8px;
-  font-weight: bold;
+  color: #000; /* Customize checkmark color */
 }
+
 
 {% endstylesheet %}
 <style>
   .ProductMeta__Description .checkmark {
-    color: #000; /* Change this to your desired checkmark color */
+    display: inline-flex;
+    align-items: center;
     margin-right: 8px;
-    font-weight: bold;
+    color: #000; /* Customize checkmark color */
   }
+  
   
 </style>
 {%- capture section_settings -%}
@@ -233,9 +237,30 @@
 
           {%- if section.settings.description_below_add_to_cart -%}
             <div class="ProductMeta__Description Rte">
-              <p><span class="checkmark">✔</span> {{ section.settings.text1 }}</p>
-              <p><span class="checkmark">✔</span> {{ section.settings.text2 }}</p>
-              <p><span class="checkmark">✔</span> {{ section.settings.text3 }}</p>
+              <p>
+                <span class="checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 0 1 .708-.708L6 10.793l7.146-7.147a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </span>
+                {{ section.settings.text1 }}
+              </p>
+              <p>
+                <span class="checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 0 1 .708-.708L6 10.793l7.146-7.147a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </span>
+                {{ section.settings.text2 }}
+              </p>
+              <p>
+                <span class="checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 0 1 .708-.708L6 10.793l7.146-7.147a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </span>
+                {{ section.settings.text3 }}
+              </p>
             </div>
             
           {%- endif -%}
