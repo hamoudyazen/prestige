@@ -1,3 +1,19 @@
+{% stylesheet %}
+  .ProductMeta__Description .checkmark {
+  color: #000; /* Change this to your desired checkmark color */
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+{% endstylesheet %}
+<style>
+  .ProductMeta__Description .checkmark {
+    color: #000; /* Change this to your desired checkmark color */
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+</style>
 {%- capture section_settings -%}
 {
   "enableHistoryState": true,
@@ -217,6 +233,15 @@
 
           {%- if section.settings.description_below_add_to_cart -%}
             <div class="ProductMeta__Description Rte">
+              <p><span class="checkmark">✔</span> {{ section.settings.text1 }}</p>
+              <p><span class="checkmark">✔</span> {{ section.settings.text2 }}</p>
+              <p><span class="checkmark">✔</span> {{ section.settings.text3 }}</p>
+            </div>
+            
+          {%- endif -%}
+
+          {%- if section.settings.description_below_add_to_cart -%}
+            <div class="ProductMeta__Description Rte">
               {{ product.description }}
             </div>
           {%- endif -%}
@@ -380,6 +405,23 @@ This is the root container for the zoom functionality. Must not be removed, as o
       "label": "Show social sharing buttons",
       "default": true
     },
+
+
+
+    { "type": "text",
+      "id": "text1",
+      "label": "Text",
+    },
+    { "type": "text",
+      "id": "text2",
+      "label": "Text",
+    },
+    { "type": "text",
+      "id": "text3",
+      "label": "Text",
+    },
+
+
     {
       "type": "checkbox",
       "id": "show_vendor",
