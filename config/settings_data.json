@@ -109,7 +109,7 @@
           "logo": "shopify://shop_images/INSPIRED._170x_dd2b4c7d-e615-4ffe-92b8-597c2d2a7058.png",
           "logo_max_width": 180,
           "navigation_menu": "main-menu",
-          "navigation_style": "center",
+          "navigation_style": "inline",
           "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
           "transparent_text_color": "#ffffff",
