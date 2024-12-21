@@ -228,6 +228,9 @@
         "type": "product-template",
         "settings": {
           "show_share_buttons": true,
+          "text1": "For intense hydration & barrier protection",
+          "text2": "Hydrating watery texture delivers moisture deep into the skin",
+          "text3": "Clinically proven: suitability for sensitive skin",
           "show_vendor": true,
           "description_below_add_to_cart": true,
           "show_color_swatch": true,
