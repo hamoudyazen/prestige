@@ -304,7 +304,7 @@
           "collection_BHpjFC": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "refined",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
