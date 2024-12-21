@@ -239,7 +239,7 @@
           "image_size": "large",
           "enable_image_zoom": true,
           "show_thumbnails": false,
-          "tab_page_1_handle": "faq",
+          "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "reviews_enabled": false,
           "featured_image_size": "large"
