@@ -125,17 +125,31 @@
               "menu": "footer"
             }
           },
+          "links_HXJ4tw": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "links_DxXKPR": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
           "footer-0": {
             "type": "text",
             "settings": {
               "title": "Our Misson",
-              "content": "<p><strong>Made To Help</strong></p>\n<p>Air Humidifier is not just gadget - it's way to live healthy.</p>\n<p></p>\n<p><strong>Recommended By 3 000+ Users</strong></p>\n<p>Our air humidifiers can be found in thousands of houses and people are in love with our work.</p>\n<p></p>\n<p><strong>Cruelty Free</strong></p>\n<p>We care our environment and our products haven't been tested on animals.</p>",
+              "content": "<p><strong>Made To Help</strong></p><p>Air Humidifier is not just gadget - it's way to live healthy.</p><p></p><p><strong>Recommended By 3 000+ Users</strong></p><p>Our air humidifiers can be found in thousands of houses and people are in love with our work.</p><p></p><p><strong>Cruelty Free</strong></p><p>We care our environment and our products haven't been tested on animals.</p>",
               "show_social_media": false
             }
           }
         },
         "block_order": [
           "footer-1",
+          "links_HXJ4tw",
+          "links_DxXKPR",
           "footer-0"
         ],
         "settings": {
