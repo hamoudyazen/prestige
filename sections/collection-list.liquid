@@ -25,15 +25,18 @@
   }
 
   #section-{{ section.id }} .CollectionItem__Link {
+    border-radius:1rem;
     color: {{ section.settings.button_color }};
     border-color: {{ section.settings.text_color }};
   }
 
   #section-{{ section.id }} .CollectionItem__Link::before {
+    border-radius:1rem;
     background-color: {{ section.settings.text_color }};
   }
 
   @media (-moz-touch-enabled: 0), (hover: hover) {
+    border-radius:1rem;
     #section-{{ section.id }} .CollectionItem__Link:hover {
       color: {{ section.settings.text_color }};
     }
