@@ -54,22 +54,38 @@
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
           {%- if tag contains '__label' -%}
-            <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
+            <span style="font-size: 10px;
+        border-radius: 3REM;
+        background-color: black;
+        color: white;
+        font-weight: 700;" class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
 
         {%- if product.available -%}
           {%- if product.compare_at_price > product.price -%}
-            <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
+            <span style="font-size: 10px;
+              border-radius: 3REM;
+              background-color: black;
+              color: white;
+              font-weight: 700;" class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
           {%- endif -%}
         {%- else -%}
-          <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
+          <span style="font-size: 10px;
+            border-radius: 3REM;
+            background-color: black;
+            color: white;
+            font-weight: 700;" class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
         {%- endif -%}
       {%- endcapture -%}
 
       {%- if product_labels != blank -%}
-        <div class="ProductItem__LabelList">
+        <div style="font-size: 10px;
+          border-radius: 3REM;
+          background-color: black;
+          color: white;
+          font-weight: 700;" class="ProductItem__LabelList">
           {{ product_labels }}
         </div>
       {%- endif -%}
