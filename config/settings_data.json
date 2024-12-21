@@ -97,8 +97,8 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content1": "first text",
-          "content2": "second text",
+          "content1": "write first text",
+          "content2": "write second text",
           "link": ""
         }
       },
@@ -264,17 +264,6 @@
           "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
         }
       },
-      "1595363281802": {
-        "type": "featured-video",
-        "settings": {
-          "section_size": "small",
-          "text_color": "#ffffff",
-          "subheading": "",
-          "title": "",
-          "image": "shopify://shop_images/Hero_Banner_3x_799c7c46-667e-426a-bbe3-860dc8fe4db9.jpg",
-          "video_url": ""
-        }
-      },
       "cart-template": {
         "type": "cart-template",
         "settings": {
@@ -323,6 +312,35 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "slideshow_JgqUWd": {
+        "type": "slideshow",
+        "blocks": {
+          "image_gqQRCg": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Hero_Banner_3x_799c7c46-667e-426a-bbe3-860dc8fe4db9.jpg",
+              "apply_overlay": false,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_gqQRCg"
+        ],
+        "settings": {
+          "show_fullscreen": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
@@ -330,7 +348,7 @@
       "custom_gKGbqw",
       "featured_collections_HX7X9q",
       "1595363175996",
-      "1595363281802"
+      "slideshow_JgqUWd"
     ]
   },
   "presets": {
