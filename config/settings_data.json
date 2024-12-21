@@ -44,7 +44,7 @@
     "show_element_staggering": true,
     "search_mode": "product,article",
     "size_chart_page": "",
-    "product_show_price_on_hover": true,
+    "product_show_price_on_hover": false,
     "product_show_secondary_image": true,
     "product_info_alignment": "left",
     "product_image_size": "natural",
