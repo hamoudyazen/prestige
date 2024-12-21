@@ -349,26 +349,26 @@
             "type": "collection",
             "settings": {
               "collection": "refined",
-              "image": "shopify://shop_images/Product_3x_1420x_550x_509be9bc-d595-4687-bd76-7ed3d725c682.jpg",
+              "image": "shopify://shop_images/Product_3x_1420x_550x_2ef6f9cc-10bf-4115-8b4c-0d53e7e7fc5c.png",
               "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "",
-              "button_text": "",
-              "apply_overlay": false
+              "content_position": "bottomCenter",
+              "subheading": "vilvah brightening bundle",
+              "title": "for all skin types",
+              "button_text": "shop now",
+              "apply_overlay": true
             }
           },
           "collection_fbTfkk": {
             "type": "collection",
             "settings": {
               "collection": "refined",
-              "image": "shopify://shop_images/Product_3x_1420x_550x_fbf50e30-eb71-47a5-80c0-09a250b5c9f9.jpg",
+              "image": "shopify://shop_images/Product_3x_1420x_550x_27765849-1624-4302-b227-74710d5b7d00.png",
               "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "",
-              "button_text": "",
-              "apply_overlay": false
+              "content_position": "bottomCenter",
+              "subheading": "ultimate collection bundle",
+              "title": "for the best value",
+              "button_text": "SHOP NOW",
+              "apply_overlay": true
             }
           }
         },
