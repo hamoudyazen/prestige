@@ -257,10 +257,10 @@
         "type": "text-with-image",
         "settings": {
           "subheading": "",
-          "title": "Breathing Fresh & Clean Air",
+          "title": "We Love Simple Skincare That Works",
           "image_position": "right",
-          "content": "<p><em>Dry and very humid air can affect health and the condition of home. When air is too humid, it can encourage mold and mildew growth and contribute to health issues.</em></p>",
-          "link_text": "SHOP Clear Aromifier",
+          "content": "<p>We are real about what skin really needs, so if it's not a guaranteed glow-worthy formula, you won't find it here. We aim to boost your confidence with a problem-free complexion while using our products.</p>",
+          "link_text": "LEARN MORE",
           "link_url": "shopify://products/cool-mist-humidifer-essential-oil-diffuser-best-portable-humidifer-air-humidifier-essential-oil-aromatherapy-diffuser"
         }
       },
@@ -341,6 +341,48 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "collection_list_NUCeaq": {
+        "type": "collection-list",
+        "blocks": {
+          "collection_Uw9jXj": {
+            "type": "collection",
+            "settings": {
+              "collection": "refined",
+              "image": "shopify://shop_images/Product_3x_1420x_550x_509be9bc-d595-4687-bd76-7ed3d725c682.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_text": "",
+              "apply_overlay": false
+            }
+          },
+          "collection_fbTfkk": {
+            "type": "collection",
+            "settings": {
+              "collection": "refined",
+              "image": "shopify://shop_images/Product_3x_1420x_550x_fbf50e30-eb71-47a5-80c0-09a250b5c9f9.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_text": "",
+              "apply_overlay": false
+            }
+          }
+        },
+        "block_order": [
+          "collection_Uw9jXj",
+          "collection_fbTfkk"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
@@ -348,7 +390,8 @@
       "custom_gKGbqw",
       "featured_collections_HX7X9q",
       "1595363175996",
-      "slideshow_JgqUWd"
+      "slideshow_JgqUWd",
+      "collection_list_NUCeaq"
     ]
   },
   "presets": {
