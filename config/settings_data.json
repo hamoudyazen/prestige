@@ -234,7 +234,7 @@
           "show_color_carousel": true,
           "show_quantity_selector": true,
           "show_inventory_quantity": true,
-          "inventory_quantity_threshold": 3,
+          "inventory_quantity_threshold": 12,
           "show_payment_button": true,
           "image_size": "large",
           "enable_image_zoom": true,
