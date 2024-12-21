@@ -112,7 +112,8 @@
           "navigation_style": "center",
           "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
-          "transparent_text_color": "#ffffff"
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify://shop_images/output-onlinepngtools.png"
         }
       },
       "footer": {
